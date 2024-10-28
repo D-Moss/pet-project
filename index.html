@@ -1,69 +1,111 @@
 <!DOCTYPE html>
-<html lang="EN">
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<title>Pet Project</title>
 </head>
 <body>
-	<div class="header" id="home">
-		<h1>My Website</h1>
-		<p>A responsive website create by me</p>
-	</div>
+	<!--Sidebar-->
+	<nav id="sidebar">
+		<img src="https://i.postimg.cc/PfFYXr0w/baby-toven.jpg" width="100%" class="small-pic">
+		<a href="#home">Home</a>
+		<a href="#puppy">Puppy Days</a>
+		<a href="#playful">Playful</a>
+		<a href="#playtime">Playtime</a>
+		<a href="#guarded">Protector</a>
+		<a href="#tired">Adult</a>
+	</nav>
 
-	<div class="navbar">
-		<a href="#home" class="active">Home</a>
-		<a href="#puppy">Puppy</a>
-		<a href="#playful">Playtime</a>
-		<a href="#tired" class="right">Adult</a>
-	</div>
+	<!--Page Content-->
+	<div id="main">
+		<section id="home"></section>
 
-	<div class="row">
-		<div class="side">
-			<h2>About Me</h2>
-			<h5>I'm so adorable</h5>
-			<div class="dogs">
-				<img src="https://i.postimg.cc/PfFYXr0w/baby-toven.jpg" height="200px">
+		<section id="puppy">
+			<div class="row mb-5">
+				<div class="col d-none d-lg-block">
+					<img src="https://i.postimg.cc/PfFYXr0w/baby-toven.jpg" class="img-fluid" alt="Toven as a puppy">
+				</div>
+				<div class="col">
+					<div class="dog-description">
+						<h2 class="mb-5">Puppy Days</h2>
+						<p class="mb-5 text-muted">
+							My name. My birthday. Type of dog. Where did I come from.
+						</p>
+					</div>
+				</div>
 			</div>
-			<p>Some text about Toven</p>
-			<h3>Type of dog:</h3>
-			<p>Miniature American Eskimo mixed with a Shetland Sheepdog</p>
-			<h3>Date of birth:</h3>
-			<p>February</p>
-		</div>
+		</section>
 
-		<div class="main">
-			<h2>Puppy</h2>
-			<div class="dogs">
-				<img src="https://i.postimg.cc/PfFYXr0w/baby-toven.jpg" height="500px">
+		<section id="playful">
+			<div class="row mb-5">
+				<div class="col">
+					<div class="dog-description">
+						<h2 class="mb-5">Playful</h2>
+						<p class="mb-5 text-muted">
+							I love to have fun. I steal water bottles and soda bottles.
+						</p>
+					</div>
+				</div>
+				<div class="col d-none d-lg-block">
+					<img src="https://i.postimg.cc/vHg9cwdS/FB-IMG-1605050419631.jpg" class="img-fluid" alt="Toven in trouble">
+				</div>
 			</div>
-			<p>Some text about me as a puppy. Tell people all about me. How cute I am. Where I came from. How I got my name.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<br>
-			<div id="playful">
-				<h2>Playtime</h2>
+		</section>
+
+		<section id="playtime">
+			<div class="row">
+				<div class="col d-none d-lg-block">
+					<img src="https://i.postimg.cc/FsMSSCrF/20140213-102256.jpg" class="img-fluid" alt="Snow time">
+				</div>
+				<div class="col">
+					<div class="dog-description">
+						<h2 class="mb-5">Playtime</h2>
+						<p class="mb-5 text-muted">
+							I love playing in the snow
+						</p>
+					</div>
+				</div>
 			</div>
-			<div class="dogs">
-				<img src="https://i.postimg.cc/vHg9cwdS/FB-IMG-1605050419631.jpg" height="500px">
-				<img src="https://i.postimg.cc/FsMSSCrF/20140213-102256.jpg" height="500px">
+		</section>
+
+		<section id="guarded">
+			<div class="row mb-5">
+				<div class="col">
+					<div class="dog-description">
+						<h2 class="mb-5">Protector</h2>
+						<p class="mb-5 text-muted">
+							Protecting my human from everything and everyone
+						</p>
+					</div>
+				</div>
+				<div class="col d-none d-lg-block">
+					<img src="https://i.postimg.cc/fbhYG2pq/guarded.jpg" class="img-fluid" alt="protection">
+				</div>
 			</div>
-			<p>Talk about how playful I am. What I like to do. The fun times that I had. Bath time. Playing in the snow. Protecting my human. Food I ate</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<br>
-			<div id="tired">
-				<h2>Adult</h2>
+		</section>
+
+		<section id="tired">
+			<div class="row">
+				<div class="col d-none d-lg-block">
+					<img src="https://i.postimg.cc/FsMSSCrF/20140213-102256.jpg" class="img-fluid" alt="replace with an older pic">
+				</div>
+				<div class="col">
+					<div class="dog-description">
+						<h2 class="mb-5">Adult</h2>
+						<p class="mb-5 text-muted">
+							Life as an adult. Getting older and leaving my family
+						</p>
+					</div>
+				</div>
 			</div>
-			<div class="dogs">
-				<img src="https://i.postimg.cc/fbhYG2pq/guarded.jpg" height="500px">
-			</div>
-			<p>Talk about life as an adult. Getting older. Slowing down. Leaving</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div>
-	</div>
-	<div class="footer">
+		</section>
+
 		<footer>
-			<p>This website was created by Diona Moss and is open sourced on GitHub</p>
+			This project was coded by Diona Moss and is open sourced on <a href="https://github.com/D-Moss" target="_blank">GitHub</a>.
 		</footer>
 	</div>
 </body>

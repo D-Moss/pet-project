@@ -6,14 +6,11 @@ body {
 	background-color: skyblue;
 	color: #ffffff;
 	margin: 0;
-}
-
-h2 {
-	color: #a5714b;
+	text-align: center;
 }
 
 /*Sidebar*/
-#sidebar {
+.sidebar {
 	margin: 0;
 	padding: 0;
 	width: 200px;
@@ -24,17 +21,22 @@ h2 {
 	overflow: auto;
 }
 
-#sidebar a {
+.sidebar a {
 	display: block;
 	color: black;
+	text-align: center;
 	padding: 18px 24px;
 	text-decoration: none;
 }
 
-#sidebar a:hover {
+.sidebar a:hover {
 	background-color: skyblue;
 	color: #a5714b;
 	font-size: 28px;
+}
+
+.sidebar .icon {
+	display: none;
 }
 
 .small-pic {
@@ -50,6 +52,40 @@ h2 {
 #home {
 	text-align: center;
 	padding: 32px 0;
+}
+
+h2 {
+	color: #a5714b;
+}
+
+.dog-img1 {
+	float: left;
+	width: 50%;
+}
+
+.dog-description1 {
+	float: left;
+	width: 50%;
+	text-align: justify;
+	padding-left: 15px;
+}
+
+.dog-img2 {
+	float: right;
+	width: 50%;
+}
+
+.dog-description2 {
+	float: right;
+	width: 50%;
+	text-align: justify;
+	padding-right: 15px;
+	padding-top: 10px;
+}
+
+.clear {
+	clear: both;
+	display: block;
 }
 
 /*Footer*/
@@ -71,30 +107,41 @@ footer a:hover {
 }
 
 /*Media Queries*/
+@media screen and (max-width: 865px) {
+	.dog-description1 {
+		width: 100%;
+		text-align: left;
+	}
+	.dog-description2 {
+		width: 100%;
+		text-align: left;
+	}
+}
+
 @media screen and (max-width: 700px) {
 	body {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://i.postimg.cc/yN0hk1JH/paws-Nbones.png");
-		p {
-			text-align: justify;
-			line-height: 2;
-			padding: 0 10px;
-		}
-		h2 {
-			text-align: center;
-		}
 	}
-	#sidebar {
+	p {
+		text-align: justify;
+		line-height: 2;
+		padding: 0 10px;
+	}
+	h2 {
+		text-align: center;
+	}
+	.sidebar {
 		width: 100%;
 		height: auto;
 		background-color: transparent;
 		position: relative;
 	}
-	#sidebar a {
+	.sidebar a {
 		float: left;
 		color: #f1f1f1;
 		font-size: 10px;
 	}
-	#sidebar a:hover {
+	.sidebar a:hover {
 		background-color: #f1f1f1;
 		color: #222;
 		font-size: 16px;
@@ -110,16 +157,25 @@ footer a:hover {
 	}
 }
 
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 600px) {
 	#main {
 		margin-left: 0;
 	}
-}
+}*/
 
-@media screen and (max-width: 400px) {
-	#sidebar a {
+@media screen and (max-width: 500px) {
+	.sidebar a {
 		text-align: center;
 		float: none;
-		color: grey;
+		font-size: 12px;
+		padding: 8px 12px;
+	}
+	p {
+		text-align: justify;
+		line-height: 2;
+		padding: 0 10px;
+	}
+	footer p {
+		text-align: center;
 	}
 }

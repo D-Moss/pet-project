@@ -73,9 +73,15 @@ footer a:hover {
 /*Media Queries*/
 @media screen and (max-width: 700px) {
 	body {
-		background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://i.postimg.cc/6pvYxVGm/Toven.jpg");
-		background-repeat: no-repeat;
-		background-size: contain;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://i.postimg.cc/yN0hk1JH/paws-Nbones.png");
+		p {
+			text-align: justify;
+			line-height: 2;
+			padding: 0 10px;
+		}
+		h2 {
+			text-align: center;
+		}
 	}
 	#sidebar {
 		width: 100%;
@@ -99,6 +105,15 @@ footer a:hover {
 	#main {
 		margin-left: 0;
 	}
+	footer p {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#main {
+		margin-left: 0;
+	}
 }
 
 @media screen and (max-width: 400px) {
@@ -106,11 +121,5 @@ footer a:hover {
 		text-align: center;
 		float: none;
 		color: grey;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	#main {
-		margin-left: 0;
 	}
 }

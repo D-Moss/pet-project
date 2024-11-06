@@ -3,9 +3,13 @@
 }
 
 body {
-	background-color: black;
-	color: grey;
+	background-color: skyblue;
+	color: #ffffff;
 	margin: 0;
+}
+
+h2 {
+	color: #a5714b;
 }
 
 /*Sidebar*/
@@ -22,14 +26,14 @@ body {
 
 #sidebar a {
 	display: block;
-	color: #222;
+	color: black;
 	padding: 18px 24px;
 	text-decoration: none;
 }
 
 #sidebar a:hover {
-	background-color: black;
-	color: lightgrey;
+	background-color: skyblue;
+	color: #a5714b;
 	font-size: 28px;
 }
 
@@ -51,14 +55,15 @@ body {
 /*Footer*/
 footer {
 	font-size: 15px;
-	color: grey;
+	color: #a5714b;
 	text-align: center;
 	padding: 32px 0;
 }
 
 footer a {
 	text-decoration: none;
-	color: lightgrey;
+	color: #845730;
+	font-weight: bold;
 }
 
 footer a:hover {
@@ -67,6 +72,11 @@ footer a:hover {
 
 /*Media Queries*/
 @media screen and (max-width: 700px) {
+	body {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://i.postimg.cc/6pvYxVGm/Toven.jpg");
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
 	#sidebar {
 		width: 100%;
 		height: auto;
@@ -81,6 +91,7 @@ footer a:hover {
 	#sidebar a:hover {
 		background-color: #f1f1f1;
 		color: #222;
+		font-size: 16px;
 	}
 	.small-pic {
 		display: none;

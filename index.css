@@ -187,7 +187,7 @@ footer a {
 	}
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
 	body {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://i.postimg.cc/yN0hk1JH/paws-Nbones.png");
 	}

@@ -13,6 +13,10 @@ h1 {
 	color: #a5714b;
 }
 
+p {
+	line-height: 1.75;
+}
+
 section:not(#home) {
 	margin: 50px 0;
 }
@@ -225,6 +229,8 @@ footer a {
 @media screen and (max-width: 900px) {
 	body {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://i.postimg.cc/yN0hk1JH/paws-Nbones.png");
+		background-repeat: no-repeat;
+		background-size: contain;
 	}
 	p {
 		line-height: 2;

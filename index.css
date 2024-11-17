@@ -3,7 +3,6 @@
 }
 
 body {
-	background-color: skyblue;
 	color: white;
 	margin: 0;
 }
@@ -23,6 +22,7 @@ section:not(#home) {
 
 img:not(.small-pic) {
 	border-radius: 10px;
+	box-shadow: 0 5px 30px white;
 }
 
 /*Navigation Side Bar*/
@@ -31,7 +31,7 @@ img:not(.small-pic) {
 	padding: 0;
 	width: 200px;
 	background-color: white;
-	height: 100%;
+	/*height: 100%;*/
 	overflow: auto;
 	position: fixed;
 	text-align: center;
@@ -40,25 +40,27 @@ img:not(.small-pic) {
 .sidebar a {
 	display: block;
 	color: #a5714b;
-	padding: 18px 24px;
+	padding: 20px 24px;
 	text-decoration: none;
 	font-weight: bold;
+	font-size: 18px;
 	letter-spacing: 1.5px;
 }
 
-.sidebar a.active {
+/*.sidebar a.active {
 	background-color: burlywood;
 	color: white;
-}
+}*/
 
 .sidebar a:hover {
-	background-color: skyblue;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://i.postimg.cc/yN0hk1JH/paws-Nbones.png");
 	color: #a5714b;
 	font-size: 28px;
+	padding: 28px;
 }
 
 .sidebar a:hover:not(.active) {
-	background-color: skyblue;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://i.postimg.cc/yN0hk1JH/paws-Nbones.png");
 	color: white;
 }
 
@@ -67,11 +69,13 @@ img:not(.small-pic) {
 }
 
 .small-pic {
-	margin-bottom: -5px;
+	margin-bottom: 0px;
 }
 
 /*Main Content*/
 #main {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://i.postimg.cc/yN0hk1JH/paws-Nbones.png");
+	background-size: contain;
 	margin-left: 200px;
 	padding: 12px 30px;
 }
@@ -140,12 +144,21 @@ img:not(.small-pic) {
 }
 
 /*Footer*/
-footer {
+footer {	
 	font-size: 15px;
-	color: white;
+	color: burlywood;
 	text-align: center;
 	padding: 32px 0;
-	font-weight: bold;
+	font-weight: bold;	
+}
+
+.footer {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://i.postimg.cc/85d4khkX/Paw-Print-and-Heart-Infinity.png");
+	background-size: contain;
+}
+
+.footer h2 {
+	font-size: 18px;
 }
 
 footer a {
@@ -227,11 +240,6 @@ footer a {
 }
 
 @media screen and (max-width: 900px) {
-	body {
-		background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://i.postimg.cc/yN0hk1JH/paws-Nbones.png");
-		background-repeat: no-repeat;
-		background-size: contain;
-	}
 	p {
 		line-height: 2;
 		padding: 0 10px;
@@ -242,7 +250,7 @@ footer a {
 	.sidebar {
 		width: 100%;
 		height: auto;
-		background-color: transparent;
+		background-image: linear-gradient(rgba(174, 18, 19, 0.9), rgba(0, 0, 0, 0.9)), url("https://i.postimg.cc/Kc9D8crN/paw_heart.png");
 		position: relative;
 	}
 	.sidebar a {
@@ -251,12 +259,14 @@ footer a {
 		font-size: 13px;
 	}
 	.sidebar a:hover {
-		background-color: transparent;
+		background-image: none;
+		background-color: linear-gradient(rgba(174, 18, 19, 0.9), rgba(0, 0, 0, 0.9));
 		color: burlywood;
-		font-size: 10px;
+		font-size: 18px;
 	}
 	.sidebar a:hover:not(.active) {
-		background-color: transparent;
+		background-image: none;
+		background-color: linear-gradient(rgba(174, 18, 19, 0.9), rgba(0, 0, 0, 0.9));
 		color: burlywood;
 		font-size: 18px;
 	}
@@ -264,28 +274,30 @@ footer a {
 		display: none;
 	}
 	#main {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.9)), url("https://i.postimg.cc/Kc9D8crN/art-clipart-print-1.png");
 		margin-left: 0;
 	}
 	#topBtn {
+		background-color: transparent;
+		color: #ae1213;
+		font-size: 18px;
+		font-weight: bold;
+		padding: 15px;
+		border-radius: 5px;
+		/*border: 3px solid #ae1213;*/
+		box-shadow: 0px 3px 10px 1px #ae1213;
 		display: none;
 		position: fixed;
 		bottom: 20px;
 		left: 30px;
-		z-index: 99;
-		font-size: 18px;
-		font-weight: bold;
-		border: 3px solid skyblue;
-		border-radius: 5px;
-		background-color: white;
-		color: #a5714b;
 		cursor: pointer;
-		padding: 15px;
 		letter-spacing: 2px;
-		/*outline: #a5714b;*/
+		z-index: 99;
 	}
 	#topBtn:hover {
-		background-color: skyblue;
+		background-color: transparent;
 		color: white;
-		border: 2px solid #a5714b;
+		/*border: 2px solid white;*/
+		box-shadow: 0px 3px 10px 1px white;
 	}
 }

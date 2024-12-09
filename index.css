@@ -55,8 +55,8 @@ img:not(.small-pic) {
 .sidebar a:hover {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://i.postimg.cc/yN0hk1JH/paws-Nbones.png");
 	color: #a5714b;
-	font-size: 28px;
-	padding: 28px;
+	font-size: 23px;
+	padding: 24px;
 }
 
 .sidebar a:hover:not(.active) {
@@ -103,7 +103,7 @@ img:not(.small-pic) {
 	float: left;
 	width: 50%;
 	text-align: justify;
-	padding-left: 15px;
+	padding-left: 20px;
 }
 
 .dog-container2 h1 {
@@ -120,7 +120,7 @@ img:not(.small-pic) {
 	float: right;
 	width: 60%;
 	text-align: justify;
-	padding-right: 15px;
+	padding-right: 20px;
 	padding-top: 10px;
 }
 

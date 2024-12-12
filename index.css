@@ -1,3 +1,4 @@
+/*
 * {
 	box-sizing: border-box;
 }
@@ -25,13 +26,12 @@ img:not(.small-pic) {
 	box-shadow: 0 5px 30px white;
 }
 
-/*Navigation Side Bar*/
+/*Navigation Side Bar
 .sidebar {
 	margin: 0;
 	padding: 0;
 	width: 200px;
 	background-color: white;
-	/*height: 100%;*/
 	overflow: auto;
 	position: fixed;
 	text-align: center;
@@ -46,11 +46,6 @@ img:not(.small-pic) {
 	font-size: 18px;
 	letter-spacing: 1.5px;
 }
-
-/*.sidebar a.active {
-	background-color: burlywood;
-	color: white;
-}*/
 
 .sidebar a:hover {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://i.postimg.cc/yN0hk1JH/paws-Nbones.png");
@@ -70,9 +65,9 @@ img:not(.small-pic) {
 
 .small-pic {
 	margin-bottom: 0px;
-}
+}*/
 
-/*Main Content*/
+/*Main Content
 #main {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://i.postimg.cc/yN0hk1JH/paws-Nbones.png");
 	background-size: contain;
@@ -141,9 +136,9 @@ img:not(.small-pic) {
 .clear {
 	clear: both;
 	display: block;
-}
+}*/
 
-/*Footer*/
+/*Footer
 footer {	
 	font-size: 15px;
 	color: burlywood;
@@ -168,9 +163,9 @@ footer a {
 
 .footer p {
 	font-size: 12px;
-}
+}*/
 
-/*Media Queries*/
+/*Media Queries
 @media screen and (max-width: 600px) {
 	.topnav a:not(:first-child) {
 		display: none;
@@ -286,9 +281,7 @@ footer a {
 		color: #ae1213;
 		font-size: 25px;
 		font-weight: 900;
-		/*padding: 10px;*/
 		border-radius: 5px;
-		/*border: 3px solid #ae1213;*/
 		box-shadow: 0px 3px 10px 1px #ae1213;
 		display: none;
 		position: fixed;
@@ -301,7 +294,7 @@ footer a {
 	#topBtn:hover {
 		background-color: #ae1213;
 		color: white;
-		/*border: 2px solid white;*/
 		box-shadow: 0px 3px 10px 1px white;
 	}
 }
+*/

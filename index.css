@@ -1,4 +1,3 @@
-/*
 * {
 	box-sizing: border-box;
 }
@@ -6,6 +5,7 @@
 body {
 	color: white;
 	margin: 0;
+	padding: 0;
 }
 
 h1 {
@@ -26,7 +26,7 @@ img:not(.small-pic) {
 	box-shadow: 0 5px 30px white;
 }
 
-/*Navigation Side Bar
+/*Navigation Side Bar*/
 .sidebar {
 	margin: 0;
 	padding: 0;
@@ -65,13 +65,14 @@ img:not(.small-pic) {
 
 .small-pic {
 	margin-bottom: 0px;
-}*/
+}
 
-/*Main Content
+/*Main Content*/
 #main {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://i.postimg.cc/yN0hk1JH/paws-Nbones.png");
 	background-size: contain;
 	margin-left: 200px;
+	margin-top: -30px;
 	padding: 12px 30px;
 }
 
@@ -136,9 +137,9 @@ img:not(.small-pic) {
 .clear {
 	clear: both;
 	display: block;
-}*/
+}
 
-/*Footer
+/*Footer*/
 footer {	
 	font-size: 15px;
 	color: burlywood;
@@ -163,9 +164,9 @@ footer a {
 
 .footer p {
 	font-size: 12px;
-}*/
+}
 
-/*Media Queries
+/*Media Queries*/
 @media screen and (max-width: 600px) {
 	.topnav a:not(:first-child) {
 		display: none;
@@ -297,4 +298,3 @@ footer a {
 		box-shadow: 0px 3px 10px 1px white;
 	}
 }
-*/
